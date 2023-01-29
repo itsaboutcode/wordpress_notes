@@ -48,7 +48,9 @@ plugin-name $ vi plugin-name.php
 <img width="1154" alt="Screenshot 2023-01-29 at 9 48 38 PM" src="https://user-images.githubusercontent.com/204423/215341318-8058986c-0d55-4b37-a494-5a79ad0e905f.png">
 
 
-### Adding readme.txt file in the root folder of plugin
+### The `readme.txt` file in a WordPress plugin
+
+The `readme.txt` file in a WordPress plugin is typically located in the root directory of the plugin. It is part of the plugin's code and is included in the plugin folder along with other important files such as the plugin's `main` file, the `uninstall.php` file, and any other necessary files.
 
 The `readme.txt` file in a WordPress plugin is a simple text file that provides important information about the plugin. The purpose of the file is to help users understand what the plugin does, how to install and use it, and what the requirements are for running it. The `readme.txt` file also contains other important information such as the plugin version, author information, and a change log.
 
@@ -57,8 +59,9 @@ Additionally, the `readme.txt` file is used by the WordPress plugin repository t
 
 ### The `uninstall.php` file in a WordPress plugin
 
+The uninstall.php file in a WordPress plugin is typically located in the root directory of the plugin. It is part of the plugin's code and is included in the plugin folder along with other important files such as the plugin's main file, the readme.txt file, and any other necessary files. When the plugin is uninstalled from a WordPress site, the uninstall.php file is automatically executed to allow the plugin to clean up after itself and remove any data or settings it created.
 
-The `uninstall.php` file in a WordPress plugin is a script that runs when the plugin is uninstalled from a WordPress site. It provides a way for the plugin to clean up after itself, removing any data or settings it created during its time on the site. The file can be used to delete custom database tables, options, or settings that the plugin created, and to ensure that the plugin does not leave any unwanted data behind after it is uninstalled.
+It provides a way for the plugin to clean up after itself, removing any data or settings it created during its time on the site. The file can be used to delete custom database tables, options, or settings that the plugin created, and to ensure that the plugin does not leave any unwanted data behind after it is uninstalled.
 
 Having an `uninstall.php` file is optional but is considered a best practice in WordPress plugin development as it ensures that the plugin does not leave any unwanted data or files on the site after it has been uninstalled. Without an `uninstall.php` file, data and settings created by the plugin may remain on the site even after the plugin has been deleted, causing issues with other plugins or future installations.
 
