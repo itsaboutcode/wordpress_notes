@@ -1,17 +1,5 @@
 # PHP For Wordpress
 
-### Adding empty index.php file in plugin directories
-
-An empty `index.php` file in WordPress serves as a protection mechanism for the contents of the folder in which it is located. When a user tries to access the folder directly through the web, the web server will look for an index file in that folder, and if one is found, it will display the contents of that file. By including an empty index.php file in the folder, the contents of the folder become inaccessible, and the web server will instead return a 404 error when attempting to access the directory directly.
-
-This is often used to prevent unauthorized access to sensitive information or to protect the contents of the folder from being directly accessible from the web. For example, in WordPress, the wp-content and wp-includes folders often include an empty index.php file to prevent users from directly accessing their contents. This helps to improve the security of the WordPress site by preventing access to important files and data.
-
-<img width="768" alt="Screenshot 2023-01-29 at 9 58 40 PM" src="https://user-images.githubusercontent.com/204423/215342964-0a5b8e86-fd40-447b-9541-88eb6369ff5f.png">
-
-
-
-<img width="1052" alt="Screenshot 2023-01-29 at 9 58 59 PM" src="https://user-images.githubusercontent.com/204423/215342968-74fd3cd5-cb9b-41fa-931e-571f171fb8b7.png">
-
 
 # Wordpress Plugin Developement
 
@@ -67,6 +55,17 @@ It provides a way for the plugin to clean up after itself, removing any data or 
 
 Having an `uninstall.php` file is optional but is considered a best practice in WordPress plugin development as it ensures that the plugin does not leave any unwanted data or files on the site after it has been uninstalled. Without an `uninstall.php` file, data and settings created by the plugin may remain on the site even after the plugin has been deleted, causing issues with other plugins or future installations.
 
+### Adding empty index.php file in plugin directories
+
+An empty `index.php` file in WordPress serves as a protection mechanism for the contents of the folder in which it is located. When a user tries to access the folder directly through the web, the web server will look for an index file in that folder, and if one is found, it will display the contents of that file. By including an empty index.php file in the folder, the contents of the folder become inaccessible, and the web server will instead return a 404 error when attempting to access the directory directly.
+
+This is often used to prevent unauthorized access to sensitive information or to protect the contents of the folder from being directly accessible from the web. For example, in WordPress, the wp-content and wp-includes folders often include an empty index.php file to prevent users from directly accessing their contents. This helps to improve the security of the WordPress site by preventing access to important files and data.
+
+<img width="768" alt="Screenshot 2023-01-29 at 9 58 40 PM" src="https://user-images.githubusercontent.com/204423/215342964-0a5b8e86-fd40-447b-9541-88eb6369ff5f.png">
+
+
+
+<img width="1052" alt="Screenshot 2023-01-29 at 9 58 59 PM" src="https://user-images.githubusercontent.com/204423/215342968-74fd3cd5-cb9b-41fa-931e-571f171fb8b7.png">
 
 
 
