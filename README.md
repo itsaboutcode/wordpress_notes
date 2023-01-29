@@ -48,6 +48,13 @@ plugin-name $ vi plugin-name.php
 <img width="1154" alt="Screenshot 2023-01-29 at 9 48 38 PM" src="https://user-images.githubusercontent.com/204423/215341318-8058986c-0d55-4b37-a494-5a79ad0e905f.png">
 
 
+### Adding readme.txt file in the root folder of plugin
+
+The `readme.txt` file in a WordPress plugin is a simple text file that provides important information about the plugin. The purpose of the file is to help users understand what the plugin does, how to install and use it, and what the requirements are for running it. The `readme.txt` file also contains other important information such as the plugin version, author information, and a change log.
+
+Additionally, the `readme.txt` file is used by the WordPress plugin repository to display information about the plugin on the plugin page, making it an important resource for users searching for plugins in the repository. By including a `readme.txt` file, plugin developers can provide users with a clear and concise description of the plugin's functionality and how it can be used.
+
+
 
 
 # Reference
