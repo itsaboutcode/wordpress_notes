@@ -1,5 +1,46 @@
 # PHP For Wordpress
 
+### `global` keyword in PHP
+
+The `global` keyword in PHP is used to make a global variable available within a function. When a variable is declared as global, it can be used inside the function as if it were declared within the function, even if it was declared outside of the function.
+
+By default, variables declared within a function are local to that function and cannot be accessed outside of it. To access a global variable within a function, the "global" keyword must be used, followed by the name of the variable.
+
+```
+$variable = "Global Variable";
+
+function myFunction() {
+    global $variable;
+    echo $variable;
+}
+
+myFunction(); // Outputs: Global Variable
+
+```
+
+In this example, the variable `$variable` is declared outside of the function and is made available within the function by using the "global" keyword. When the function is executed, the value of the global variable is echoed.
+
+
+
+### `global` keyword usage in WordPress
+
+In WordPress, the `global` keyword is used to make global variables available within a function. These variables are usually defined in the `WordPress core and contain` information about the `current state of the site`, such as the current user, the current post, or the current query. By using the `global` keyword, developers can access these variables within their own functions and use the information they contain to modify or enhance the behavior of their plugins or themes.
+
+For example, the following code makes the `$post` global variable available within a function:
+
+```
+function my_function() {
+    global $post;
+    echo $post->post_title;
+}
+
+```
+
+In this example, the `$post` global variable is made available within the function `my_function()` and the title of the current post can be displayed by echoing the `post_title` property of the `$post` object.
+
+It's important to use the global keyword **sparingly** and only when necessary, as it can lead to code that is harder to maintain and debug. Whenever possible, try to use WordPress `actions and filters` to modify the behavior of the site rather than accessing global variables directly.
+
+
 
 # Wordpress Plugin Developement
 
